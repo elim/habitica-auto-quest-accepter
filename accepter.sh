@@ -29,7 +29,7 @@ fi
 is_accepted=$(echo "${quest_data}" | jq ".members[\"${api_user}\"]")
 
 if [ "${is_accepted}" = "true" ]; then
-  echo "I have already accepted it."
+  echo "You have already accepted it."
   exit
 fi
 
