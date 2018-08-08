@@ -2,7 +2,7 @@ FROM alpine:3.8
 
 LABEL licence="MIT License" \
       maintener="Takeru Naito <takeru.naito@gmail.com>" \
-      version="0.0.1"
+      version="0.0.2"
 
 ENV TZ Asia/Tokyo
 ENV WORKDIR /var/app

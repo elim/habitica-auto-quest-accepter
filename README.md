@@ -15,11 +15,11 @@ Usage
 
 * Docker directly:
 
-        docker pull elim/habitica-auto-quest-accepter:0.0.1
+        docker pull elim/habitica-auto-quest-accepter:0.0.2
         docker run --rm -it \
           -e API_USER=your-api-user \
           -e API_KEY=your-api-key \
-          elim/habitica-auto-quest-accepter:0.0.1
+          elim/habitica-auto-quest-accepter:0.0.2
 
 License
 -------

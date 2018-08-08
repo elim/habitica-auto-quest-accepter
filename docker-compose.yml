@@ -4,7 +4,7 @@ services:
   app:
     build: .
     env_file: .env
-    image: elim/habitica-auto-quest-accepter:0.0.1
+    image: elim/habitica-auto-quest-accepter:0.0.2
     restart: on-failure
     # volumes:
     #   - ./accepter.sh:/var/app/accepter.sh
