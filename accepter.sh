@@ -15,14 +15,14 @@ quest_data=$(
 
 quest_active=$(echo "${quest_data}" | jq '.active')
 
-if [ "${quest_active}" = "null" ]; then
-  echo "There are not any quests yet."
-  exit
-fi
-
 if [ "${quest_active}" = "true" ]; then
   quest_key=$(echo "${quest_data}" | jq '.key')
   echo "The quest ${quest_key} has already started."
+  exit
+fi
+
+if [ "$(echo "${quest_data}" | jq ".members")" = "{}" ]; then
+  echo "There was no invitation to a quest."
   exit
 fi
 
